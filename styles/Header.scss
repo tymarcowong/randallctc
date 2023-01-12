@@ -1,0 +1,40 @@
+header {
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 1.25rem;
+
+  nav {
+    ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      justify-content: center;
+      font-size: 1.05rem;
+      margin: 1em;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+
+      li {
+        a {
+          &:hover {
+            color: rgb(108, 103, 255);
+          }
+        }
+
+        .active::after {
+          content: "";
+          width: 100%;
+          border-bottom: 1px solid black;
+          display: block;
+          margin-top: 0.25em;
+        }
+      }
+    }
+  }
+
+  h1 {
+    font-size: 2.1rem;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+  }
+}
