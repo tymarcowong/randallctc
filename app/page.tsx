@@ -5,6 +5,7 @@ import eventsMarketingImage from "../image/events-and-marketing/Malibu-Crush-pre
 import portraitsImage from "../image/portraits/1.jpg";
 
 import "../styles/Home.scss";
+import Footer from "./Footer";
 
 const galleries = [
   {
@@ -32,25 +33,28 @@ const galleries = [
 
 export default function Home() {
   return (
-    <main className="home">
-      <h2>portfolio</h2>
-      <p>
-        Below you can see links to my galleries. Click on an image to view the
-        gallery.
-      </p>
-      <section>
-        {galleries.map((gallery) => {
-          return (
-            <GalleryCard
-              key={gallery.id}
-              name={gallery.name}
-              image={gallery.image}
-              link={gallery.link}
-              alt={gallery.alt}
-            />
-          );
-        })}
-      </section>
-    </main>
+    <>
+      <main className="home">
+        <h2>portfolio</h2>
+        <p>
+          Below you can see links to my galleries. Click on an image to view the
+          gallery.
+        </p>
+        <section>
+          {galleries.map((gallery) => {
+            return (
+              <GalleryCard
+                key={gallery.id}
+                name={gallery.name}
+                image={gallery.image}
+                link={gallery.link}
+                alt={gallery.alt}
+              />
+            );
+          })}
+        </section>
+      </main>
+      <Footer />
+    </>
   );
 }

@@ -2,6 +2,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 
 import "../styles/globals.scss";
+import { usePathname } from "next/navigation";
 
 export default function RootLayout({
   children,
@@ -14,7 +15,6 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );
