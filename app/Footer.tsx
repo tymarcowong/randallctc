@@ -1,11 +1,8 @@
 import React from "react";
-import {
-  AiFillInstagram,
-  AiFillFacebook,
-  AiFillLinkedin,
-} from "react-icons/ai";
 
 import "../styles/Footer.scss";
+
+import Socials from "./Socials";
 
 export default function Footer() {
   return (
@@ -16,23 +13,7 @@ export default function Footer() {
         <li>Phone: 04 2460 4395</li>
         <li>rcrc1026@gmail.com</li>
       </ul>
-      <ul id="socials">
-        <li>
-          <a href="/">
-            <AiFillInstagram />
-          </a>
-        </li>
-        <li>
-          <a href="/">
-            <AiFillFacebook />
-          </a>
-        </li>
-        <li>
-          <a href="/">
-            <AiFillLinkedin />
-          </a>
-        </li>
-      </ul>
+      <Socials id={"footer"} />
       <p>&copy; Randy.CTC. All rights reserved.</p>
     </footer>
   );

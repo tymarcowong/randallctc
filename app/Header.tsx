@@ -29,7 +29,10 @@ export default function Header() {
       <h1>
         <Link href="/">RANDALL.CTC</Link>
       </h1>
-      <nav>
+      <nav id="mobile">
+        <div className="hamburger"></div>
+      </nav>
+      <nav id="normal">
         <ul>
           <li>
             <NavLink href="/" label="Home" />

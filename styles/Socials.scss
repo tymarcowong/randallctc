@@ -1,0 +1,17 @@
+.socials {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 2em 0;
+
+  a {
+    color: white;
+    font-size: 1.75rem;
+  }
+}
+
+#about-me_socials {
+  a {
+    color: black;
+  }
+}
