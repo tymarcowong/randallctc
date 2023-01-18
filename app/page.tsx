@@ -36,10 +36,12 @@ export default function Home() {
     <>
       <main className="home">
         <h2>portfolio</h2>
+
         <p>
           Below you can see links to my galleries. Click on an image to view the
           gallery.
         </p>
+
         <section>
           {galleries.map((gallery) => {
             return (
@@ -54,6 +56,7 @@ export default function Home() {
           })}
         </section>
       </main>
+
       <Footer />
     </>
   );

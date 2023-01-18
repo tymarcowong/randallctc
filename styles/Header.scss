@@ -1,10 +1,11 @@
 @import "breakpoints";
+@import "paddings";
 
 $heading-size: 2.1rem;
 
 header {
   display: flex;
-  padding: 1.5rem;
+  padding: $p-mobile;
   margin-bottom: 1rem;
   justify-content: space-between;
   align-items: center;

@@ -13,8 +13,8 @@ interface Props {
 
 export default function GalleryCard({ name, image, link, alt }: Props) {
   return (
-    <div className="img-container">
-      <a href={link}>
+    <div className="card">
+      <a href={link} className="img-container">
         <Image src={image} alt={alt} />
       </a>
       <a href={link} className="link-text">
