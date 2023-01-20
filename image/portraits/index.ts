@@ -10,6 +10,11 @@ import img9 from "./9.jpg";
 import img10 from "./10.jpg";
 import img11 from "./11.jpg";
 import img12 from "./12.jpg";
+import img13 from "./13.jpg";
+import img14 from "./14.jpg";
+import header from "./header.jpg";
+import footer from "./header.jpg";
+import icon from "./icon.jpg";
 
 export const PORTRAITS_ARRAY = [
   {
@@ -28,4 +33,10 @@ export const PORTRAITS_ARRAY = [
   { id: 6, img: img6, alt: "A man in front of a grafitti wall." },
   { id: 9, img: img9, alt: "A man in a hoodie in a forest." },
   { id: 12, img: img12, alt: "seeing a man through wooden fences." },
+  { id: 13, img: img13, alt: "seeing a man through wooden fences." },
+  { id: 14, img: img14, alt: "seeing a man through wooden fences." },
 ];
+
+export const PORTRAITS_HEADER = header;
+export const PORTRAITS_FOOTER = footer;
+export const PORTRAITS_ICON = icon;
