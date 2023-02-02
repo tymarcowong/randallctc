@@ -1,6 +1,6 @@
 import React from "react";
 import WorksContainer from "../WorksContainer";
-import MasonryGrid from "./MasonryGrid";
+import MasonryGrid from "../MasonryGrid";
 
 export default function Portraits() {
   return (
@@ -11,6 +11,7 @@ export default function Portraits() {
         description={
           "In this gallery you can see a selection of my commisionned work. I hope you enjoy."
         }
+        page="portraits"
       />
     </>
   );

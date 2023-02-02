@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { PORTRAITS_ARRAY } from "../../image/portraits";
+import { PORTRAITS_ARRAY } from "../image/portraits";
 
 import "../../styles/MasonryGrid.scss";
 

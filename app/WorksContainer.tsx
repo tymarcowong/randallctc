@@ -6,13 +6,19 @@ interface Props {
   title: string;
   main: JSX.Element;
   description: string;
+  page: string;
 }
 
-export default function WorksContainer({ title, main, description }: Props) {
+export default function WorksContainer({
+  title,
+  main,
+  description,
+  page,
+}: Props) {
   return (
     <>
       <main className="works-container">
-        <div className="title-container">
+        <div className="title-container" id={page}>
           <h2>{title}</h2>
         </div>
         <p id="description">{description}</p>
