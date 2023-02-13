@@ -30,42 +30,68 @@ export default function Header() {
     setActive((prev) => !prev);
   }
 
+  function closeMenu() {
+    setActive(false);
+  }
+
   return (
-    <header>
-      <h1>
-        <Link href="/">RANDALL.CTC</Link>
-      </h1>
+    <>
+      <header className={active ? "active" : ""}>
+        <h1>
+          <Link href="/">RANDALL.CTC</Link>
+        </h1>
 
-      <nav id="mobile">
-        <button
-          className={`hamburger ${active ? "active" : ""}`}
-          onClick={toggleHamburger}
-        >
-          <div></div>
-          {/* <div id="mid"></div>
+        <nav id="mobile">
+          <button
+            className={`hamburger ${active ? "active" : ""}`}
+            onClick={toggleHamburger}
+          >
+            <div></div>
+            {/* <div id="mid"></div>
           <div id="bot"></div> */}
-        </button>
-      </nav>
+          </button>
+        </nav>
 
-      <nav id="normal">
-        <ul>
-          <li>
-            <NavLink href="/" label="Home" />
-          </li>
-          <li>
-            <NavLink href="/portraits" label="Portraits" />
-          </li>
-          <li>
-            <NavLink href="/casual" label="Casual" />
-          </li>
-          <li>
-            <NavLink href="/eventsMarketing" label="Events&Marketing" />
-          </li>
-          <li>
-            <NavLink href="/aboutMe" label="About Me" />
-          </li>
-        </ul>
-      </nav>
-    </header>
+        <nav id="normal">
+          <ul>
+            <li>
+              <NavLink href="/" label="Home" />
+            </li>
+            <li>
+              <NavLink href="/portraits" label="Portraits" />
+            </li>
+            <li>
+              <NavLink href="/casual" label="Casual" />
+            </li>
+            <li>
+              <NavLink href="/eventsMarketing" label="Events&Marketing" />
+            </li>
+            <li>
+              <NavLink href="/aboutMe" label="About Me" />
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <ul
+        className={`mobile-menu ${active ? "active" : ""}`}
+        onClick={closeMenu}
+      >
+        <li>
+          <NavLink href="/" label="Home" />
+        </li>
+        <li>
+          <NavLink href="/portraits" label="Portraits" />
+        </li>
+        <li>
+          <NavLink href="/casual" label="Casual" />
+        </li>
+        <li>
+          <NavLink href="/eventsMarketing" label="Events&Marketing" />
+        </li>
+        <li>
+          <NavLink href="/aboutMe" label="About Me" />
+        </li>
+      </ul>
+    </>
   );
 }

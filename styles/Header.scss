@@ -11,6 +11,13 @@ header {
   margin-bottom: 1rem;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 1;
+
+  &.active {
+    position: sticky;
+    top: 0;
+  }
 
   h1 {
     font-size: $heading-size;
@@ -58,18 +65,18 @@ header {
         transform: translateY($hamb-translate * -1);
       }
     }
-  }
 
-  // Show menu
-  .active {
-    div {
-      width: 0;
+    // Show menu
+    &.active {
+      div {
+        width: 0;
 
-      &::before {
-        transform: rotate(45deg) translateY(0);
-      }
-      &::after {
-        transform: rotate(-45deg) translateY(0);
+        &::before {
+          transform: rotate(45deg) translateY(0);
+        }
+        &::after {
+          transform: rotate(-45deg) translateY(0);
+        }
       }
     }
   }
@@ -117,6 +124,39 @@ header {
           }
         }
       }
+    }
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  transition: left 0.3s;
+  left: 100%;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: white;
+  overflow: hidden;
+
+  &.active {
+    left: 0;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 1.75rem;
+  gap: 0.9em;
+
+  li {
+    width: 100%;
+    a {
+      display: block;
+      text-align: center;
+      padding: 0 1em;
+      font-weight: 400;
     }
   }
 }
