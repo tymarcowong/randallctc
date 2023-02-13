@@ -24,14 +24,29 @@ function NavLink({ href, label }: NavLinkProps) {
 }
 
 export default function Header() {
+  const [active, setActive] = useState(false);
+
+  function toggleHamburger() {
+    setActive((prev) => !prev);
+  }
+
   return (
     <header>
       <h1>
         <Link href="/">RANDALL.CTC</Link>
       </h1>
-      <nav id="mobile">
-        <div className="hamburger"></div>
-      </nav>
+
+      {/* <nav id="mobile">
+        <button
+          className={`hamburger ${active ? "active" : ""}`}
+          onClick={toggleHamburger}
+        >
+          <div id="top"></div>
+          <div id="mid"></div>
+          <div id="bot"></div>
+        </button>
+      </nav> */}
+
       <nav id="normal">
         <ul>
           <li>

@@ -2,8 +2,10 @@
 @import "paddings";
 
 $heading-size: 2.1rem;
+$hamb-translate: 10px;
 
 header {
+  width: 100%;
   display: flex;
   padding: $p-mobile;
   margin-bottom: 1rem;
@@ -19,7 +21,25 @@ header {
   .hamburger {
     width: $heading-size;
     height: $heading-size;
-    background-color: rgb(108, 103, 255);
+    cborder: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      width: 100%;
+      height: 2px;
+      background-color: black;
+
+      &:nth-child(1) {
+        transform: translateY($hamb-translate);
+      }
+
+      &:nth-child(3) {
+        transform: translateY($hamb-translate * -1);
+      }
+    }
   }
 
   #normal {
