@@ -36,16 +36,16 @@ export default function Header() {
         <Link href="/">RANDALL.CTC</Link>
       </h1>
 
-      {/* <nav id="mobile">
+      <nav id="mobile">
         <button
           className={`hamburger ${active ? "active" : ""}`}
           onClick={toggleHamburger}
         >
-          <div id="top"></div>
-          <div id="mid"></div>
-          <div id="bot"></div>
+          <div></div>
+          {/* <div id="mid"></div>
+          <div id="bot"></div> */}
         </button>
-      </nav> */}
+      </nav>
 
       <nav id="normal">
         <ul>

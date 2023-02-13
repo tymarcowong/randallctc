@@ -21,22 +21,37 @@ header {
   .hamburger {
     width: $heading-size;
     height: $heading-size;
-    cborder: none;
+    border: none;
+
+    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
     div {
-      width: 100%;
+      width: $heading-size;
       height: 2px;
+      border-radius: 5px;
       background-color: black;
 
-      &:nth-child(1) {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: $heading-size;
+        height: 2px;
+        border-radius: 5px;
+        background-color: black;
+        left: 0;
+      }
+
+      &::before {
         transform: translateY($hamb-translate);
       }
 
-      &:nth-child(3) {
+      &::after {
         transform: translateY($hamb-translate * -1);
       }
     }
