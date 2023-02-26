@@ -1,8 +1,7 @@
-import { info } from "console";
 import { StaticImageData } from "next/image";
 import Image from "next/image";
 import React from "react";
-import { useRouter } from "next/router";
+import "../styles/GalleryCard.scss";
 
 interface Props {
   name: string;

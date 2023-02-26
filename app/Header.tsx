@@ -13,7 +13,9 @@ interface NavLinkProps {
 
 function NavLink({ href, label }: NavLinkProps) {
   let className = "";
-  if (usePathname() === href) {
+  if (usePathname()?.startsWith(href) && href !== "/") {
+    className += "active";
+  } else if (usePathname() === "/" && href === "/") {
     className += "active";
   }
   return (
