@@ -12,21 +12,21 @@ const events = [
     id: 0,
     name: "double delicious",
     image: DOUBLEDELICIOUS_ICON,
-    link: "/portraits",
+    link: "/double-delicious",
     alt: "Portrait of a man in front of a wall.",
   },
   {
     id: 1,
     name: "malibu crush premiere",
     image: MALIBU_ICON,
-    link: "/casual",
+    link: "/malibu-crush-premiere",
     alt: "Image of a bridge and a river.",
   },
   {
     id: 2,
     name: "marketing materials",
     image: MARKETING_ICON,
-    link: "/eventsMarketing",
+    link: "/marketing",
     alt: "A man in a confernece activity.",
   },
 ];
@@ -40,7 +40,7 @@ export default function Events() {
             key={event.id}
             name={event.name}
             image={event.image}
-            link={event.link}
+            link={`/eventsMarketing${event.link}`}
             alt={event.alt}
           />
         );
