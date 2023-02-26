@@ -3,12 +3,29 @@
 
 .events-marketing-examples {
   h2 {
-    padding: 0 $p-mobile 0.7em;
-    font-weight: 500;
-    font-size: 1.3rem;
+    padding: 0 $p-mobile 0.6em;
+    font-weight: 400;
+    font-size: 1.6rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
   }
 
   p {
     padding: 0 $p-mobile;
+    font-size: 1rem;
+  }
+
+  @include lg {
+    text-align: center;
+    margin-top: 3rem;
+
+    h2 {
+      font-weight: 400;
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
   }
 }

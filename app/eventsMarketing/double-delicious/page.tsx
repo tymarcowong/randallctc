@@ -6,7 +6,7 @@ export default function doubleDelicious() {
     <>
       <EventsMarketingExamples
         heading="Double Delicious"
-        subHeading="@The Councourse, NSW, Sydney"
+        subHeading="@The Concourse, Sydney, NSW"
       />
     </>
   );
