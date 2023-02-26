@@ -1,0 +1,14 @@
+@import "breakpoints";
+@import "paddings";
+
+.events-marketing-examples {
+  h2 {
+    padding: 0 $p-mobile 0.7em;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+
+  p {
+    padding: 0 $p-mobile;
+  }
+}
